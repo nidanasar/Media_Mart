@@ -47,7 +47,7 @@ const ProductDetails: React.FC<Props> = ({ product }) => {
   const [comment, setComment] = useState("");
   const [rating, setRating] = useState(5);
   const [editingReview, setEditingReview] = useState<string | null>(null);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  //eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isSubmitting, setIsSubmitting] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -86,7 +86,6 @@ const ProductDetails: React.FC<Props> = ({ product }) => {
     localStorage.setItem(`reviews-${product._id}`, JSON.stringify(reviews));
   }, [reviews, product._id]);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -132,7 +131,6 @@ const ProductDetails: React.FC<Props> = ({ product }) => {
     }
   };
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-
   const handleEdit = (review: Review) => {
     setName(review.name);
     setEmail(review.email);
@@ -140,12 +138,11 @@ const ProductDetails: React.FC<Props> = ({ product }) => {
     setRating(review.rating);
     setEditingReview(review.id);
   };
-
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleDelete = (reviewId: string) => {
     setReviews((prev) => prev.filter((review) => review.id !== reviewId));
   };
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-
   const renderStars = (rating: number) => {
     const stars = [];
     const fullStars = Math.floor(rating);
