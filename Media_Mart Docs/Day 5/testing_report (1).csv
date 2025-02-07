@@ -1,0 +1,6 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+TC001,Verify product listing loads correctly,Open product page and verify all products are displayed,All products should be listed,Products loaded successfully,Pass,Low,Developer,Working fine
+TC002,Check search functionality returns correct results,Enter search query and check if relevant products appear,Only relevant products should be displayed,Search returned correct results,Pass,Medium,Developer,Search optimized
+TC003,Validate add-to-cart functionality,Add an item to cart and verify if it appears in cart,Selected product should be added to cart,Product was added to cart successfully,Pass,High,Developer,Cart functioning well
+TC004,Ensure checkout process completes successfully,Proceed to checkout and confirm order completion,Checkout should complete without errors,Checkout completed without issues,Pass,Critical,Developer,Checkout smooth
+TC005,Test responsiveness on mobile devices,Open the website on mobile and check layout,Site should be fully responsive,Site displayed correctly on mobile,Pass,Medium,Developer,Responsive on all devices

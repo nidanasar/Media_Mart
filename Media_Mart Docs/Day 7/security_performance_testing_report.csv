@@ -1,0 +1,6 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+SEC001,Check for SQL Injection vulnerability in login form,Enter SQL payload in login field and check if authentication bypass occurs,SQL Injection attempt should be blocked,SQL Injection attempt was blocked,Pass,Critical,Developer,Secure against SQL Injection
+SEC002,Validate Cross-Site Scripting (XSS) prevention in inputs,Inject malicious script in input fields and observe execution,XSS script should not execute,XSS script did not execute,Pass,High,Developer,Proper XSS prevention in place
+SEC003,Ensure HTTPS is enforced for secure communication,Load website and verify if HTTPS is used by default,Website should automatically redirect to HTTPS,Website redirected to HTTPS,Pass,Medium,Developer,HTTPS enforced properly
+SEC004,Test role-based access control for admin panel,Try accessing admin panel as a regular user and check if access is restricted,Unauthorized users should not access admin panel,Access was denied to unauthorized users,Pass,High,Developer,Access control works as expected
+PERF001,Measure website performance using Lighthouse,Run Lighthouse audit and analyze performance metrics,Performance score should be above 90,Lighthouse performance score: 92,Pass,Low,Developer,Good performance score achieved
